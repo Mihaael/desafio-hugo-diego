@@ -58,7 +58,7 @@ class CaixaDaLanchonete {
 
     this.pedido[produto] = quantidade;
 
-    const extraDO = CARDAPIO[produto]?.extraDO
+    const extraDO = CARDAPIO[produto]?.extraDo
     if (extraDO && !this.itensIncluemProduto(extraDO)) {
       this.adicionarErro(`Você só pode adicionar ${produto} como extra se houver ${CARDAPIO[produto]?.extraDo} como principal!`);
     }
